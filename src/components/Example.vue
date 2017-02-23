@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="root">
-    {{msg}}
+    <input type="text" name="test" value="123e">
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   data(){
     return {
-      msg:'Hello World'
+      msg:'Hello Example'
     }
   }
 }

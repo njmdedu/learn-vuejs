@@ -1,6 +1,15 @@
 <template>
   <div id="app">
-    {{msg}}
+    <h2>{{msg}}</h2>
+    <div class="links">
+        <router-link to="/">Home</router-link>
+        <router-link to="/example">Example</router-link>
+        <router-link to="/login">Login</router-link>
+        <router-link to="/signin">Signin</router-link>
+    </div>
+    <div class="">
+        <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -20,9 +29,7 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 h1, h2 {
