@@ -10,16 +10,16 @@ Vue.use(VueRouter)
 const router = new VueRouter({
     routes: [
       {
-        path:'/',component:Home
+        path:'/learn-vuejs',component:Home
       },
       {
-        path:'/example',component:Example
+        path:'/learn-vuejs/example',component:Example
       },
       {
-        path:'/login',component:Login
+        path:'/learn-vuejs/login',component:Login
       },
       {
-        path:'/elecomponents',component:EleComponents
+        path:'/learn-vuejs/elecomponents',component:EleComponents
       }
     ],
     mode: 'history',
