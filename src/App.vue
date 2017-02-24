@@ -5,7 +5,7 @@
         <router-link to="/">Home</router-link>
         <router-link to="/example">Example</router-link>
         <router-link to="/login">Login</router-link>
-        <router-link to="/menu">Menu</router-link>
+        <router-link to="/elecomponents">Element Components</router-link>
     </div>
     <div class="">
         <router-view></router-view>
