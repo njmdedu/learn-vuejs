@@ -18,20 +18,25 @@
 
 <script>
 export default {
-  data(){
-    return {
-      email:'zhangwei900808@126.com',
-      password:'123456'
+    data() {
+        return {
+            email: 'zhangwei900808@126.com',
+            password: '123456'
+        }
+    },
+    methods: {
+        showMe() {
+            alert(this.email)
+            alert(this.$store.state.count)
+            this.$store.commit('increment')
+            this.$store.getters.increment
+            alert(this.$store.state.count)
+
+            alert(this.$store.state.login.isLogin)
+            this.$store.commit('setLogin')
+            alert(this.$store.state.login.isLogin)
+        }
     }
-  },
-  methods:{
-    showMe(){
-      alert(this.email)
-      alert(this.$store.state.count)
-      this.$store.state.count++
-      alert(this.$store.state.count)
-    }
-  }
 }
 </script>
 
