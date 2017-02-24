@@ -5,7 +5,7 @@
         <router-link to="/">Home</router-link>
         <router-link to="/example">Example</router-link>
         <router-link to="/login">Login</router-link>
-        <router-link to="/signin">Signin</router-link>
+        <router-link to="/menu">Menu</router-link>
     </div>
     <div class="">
         <router-view></router-view>
@@ -32,21 +32,4 @@ export default {
   color: #2c3e50;
 }
 
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
