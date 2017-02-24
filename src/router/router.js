@@ -23,7 +23,6 @@ const router = new VueRouter({
       }
     ],
     mode: 'history',
-    base:'/learn-vuejs/'
 })
 
 export default router;
