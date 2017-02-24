@@ -2,10 +2,10 @@
   <div id="app">
     <h2>{{msg}}</h2>
     <div class="links">
-        <router-link to="/learn-vuejs">Home</router-link>
-        <router-link to="/learn-vuejs/example">Example</router-link>
-        <router-link to="/learn-vuejs/login">Login</router-link>
-        <router-link to="/learn-vuejs/elecomponents">Element Components</router-link>
+        <router-link to="/">Home</router-link>
+        <router-link to="/example">Example</router-link>
+        <router-link to="/login">Login</router-link>
+        <router-link to="/elecomponents">Element Components</router-link>
     </div>
     <div class="">
         <router-view></router-view>

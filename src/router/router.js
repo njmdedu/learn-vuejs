@@ -10,19 +10,20 @@ Vue.use(VueRouter)
 const router = new VueRouter({
     routes: [
       {
-        path:'/learn-vuejs',component:Home
+        path:'/',component:Home
       },
       {
-        path:'/learn-vuejs/example',component:Example
+        path:'/example',component:Example
       },
       {
-        path:'/learn-vuejs/login',component:Login
+        path:'/login',component:Login
       },
       {
-        path:'/learn-vuejs/elecomponents',component:EleComponents
+        path:'/elecomponents',component:EleComponents
       }
     ],
     mode: 'history',
+    base:'/learn-vuejs/'
 })
 
 export default router;
