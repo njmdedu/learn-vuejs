@@ -2,9 +2,10 @@
   <div id="app">
     <h2>{{msg}}</h2>
     <div class="links">
-        <router-link to="/">Home</router-link>
+        <router-link to="/" exact>Home</router-link>
         <router-link to="/example">Example</router-link>
-        <router-link to="/login">Login</router-link>
+        <router-link to="/login/bar">Login-bar</router-link>
+        <router-link to="/login/tool">Login-tool</router-link>
         <router-link to="/elecomponents" append>Element Components</router-link>
     </div>
     <div class="">

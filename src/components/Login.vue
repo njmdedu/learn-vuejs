@@ -1,5 +1,6 @@
 <template lang="html">
   <div class="">
+    <h1>{{$route.params.id}}</h1>
     <form class="myform">
       <div class="form-group col-sm-3">
         <label for="exampleInputEmail1">邮箱</label>
@@ -13,6 +14,12 @@
         <a href="javascript:;" class="btn btn-default" @click="showMe">登录</a>
       </div>
     </form>
+    <div class="router-row">
+        <router-link to="/login/bar/profile">Login-bar</router-link>
+        <transition name="slide">
+       <router-view></router-view>
+     </transition>
+    </div>
   </div>
 </template>
 
@@ -22,6 +29,18 @@ export default {
         return {
             email: 'zhangwei900808@126.com',
             password: '123456'
+        }
+    },
+    // beforeRouteEnter(to, from, next) {
+    //     // 在渲染该组件的对应路由被 confirm 前调用
+    //     // 不！能！获取组件实例 `this`
+    //     // 因为当钩子执行前，组件实例还没被创建
+    //     //console.log('beforeRouteEnter');
+    //     next('/example');
+    // },
+    watch: {
+        '$route' (to, from) {
+            //对路由变化做出响应
         }
     },
     methods: {
@@ -41,7 +60,12 @@ export default {
 </script>
 
 <style lang="css">
+.router-row{
+  widht:500px;
+  margin:20px;
+}
   .myform{
-    padding:15px;
+    padding: 15px;
+    height: 100px;
   }
 </style>
