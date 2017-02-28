@@ -5,6 +5,7 @@
         <router-link to="/" exact>Home</router-link>
         <router-link to="/example">Example</router-link>
         <router-link to="/map">Map</router-link>
+        <router-link to="/editor">Editor</router-link>
         <router-link to="/login/bar">Login-bar</router-link>
         <router-link to="/login/tool">Login-tool</router-link>
         <router-link to="/elecomponents" append>Element Components</router-link>

@@ -7,6 +7,7 @@ import EleComponents from '../components/ElementComponents.vue'
 import User from '../components/User.vue'
 import to404 from '../components/404.vue'
 import Map from '../pages/Map.vue'
+import Editor from '../pages/Editor.vue'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,10 @@ const router = new VueRouter({
         {
             path: '/map',
             component: Map
+        },
+        {
+            path: '/editor',
+            component: Editor
         },
         {
             path: '/login/:id',
