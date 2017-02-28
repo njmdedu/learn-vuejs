@@ -6,6 +6,7 @@ import Login from '../components/Login.vue'
 import EleComponents from '../components/ElementComponents.vue'
 import User from '../components/User.vue'
 import to404 from '../components/404.vue'
+import Map from '../pages/Map.vue'
 
 Vue.use(VueRouter)
 
@@ -17,6 +18,10 @@ const router = new VueRouter({
         {
             path: '/example',
             component: Example
+        },
+        {
+            path: '/map',
+            component: Map
         },
         {
             path: '/login/:id',
